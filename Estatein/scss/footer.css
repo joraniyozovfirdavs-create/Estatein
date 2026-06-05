@@ -1,0 +1,225 @@
+#footer .container {
+  background-color: #141414;
+}
+#footer .container .footer_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px 60px 80px;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+}
+#footer .container .footer_top .top_left {
+  width: 975px;
+}
+#footer .container .footer_top .top_left h2 {
+  font-size: 38px;
+  line-height: 150%;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#footer .container .footer_top .top_left .top_text p {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #999999;
+}
+#footer .container .footer_top .top_right {
+  margin-bottom: 13px;
+}
+#footer .container .footer_top .top_right a {
+  width: 165px;
+  height: 49px;
+  padding: 14px 20px;
+  background-color: #1A1A1A;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #703BF7;
+  border: none;
+}
+#footer .container .footer_top .top_right a:active {
+  background-color: rgba(112, 59, 247, 0.7254901961);
+}
+#footer .container .footer_center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 80px;
+}
+#footer .container .footer_center .center_left {
+  /* Inputni o'rab turgan umumiy konteyner */
+}
+#footer .container .footer_center .center_left .subscribe-box {
+  display: flex;
+  align-items: center;
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 14px 20px;
+  width: 100%;
+  max-width: 305px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  margin-top: 24px;
+  /* Sichqoncha inputga kelganda border biroz yorishadi */
+}
+#footer .container .footer_center .center_left .subscribe-box:focus-within {
+  border-color: #4d4d4d;
+}
+#footer .container .footer_center .center_left .subscribe-box {
+  /* Chap tomondagi ikonka joylashuvi */
+}
+#footer .container .footer_center .center_left .subscribe-box .input-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  /* Matndan masofasi */
+}
+#footer .container .footer_center .center_left .subscribe-box {
+  /* Matn kiritiladigan qism (Input) */
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-input {
+  flex: 1;
+  background: transparent;
+  /* Orqa foni o'chirildi */
+  border: none;
+  outline: none;
+  color: #ffffff;
+  /* Yozuv rangi */
+  font-size: 16px;
+  font-family: sans-serif;
+  /* Ko'rsatkich matn (Placeholder) rangi */
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-input::-moz-placeholder {
+  color: #666666;
+  /* Figmadagi och kulrang */
+  opacity: 1;
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-input::placeholder {
+  color: #666666;
+  /* Figmadagi och kulrang */
+  opacity: 1;
+}
+#footer .container .footer_center .center_left .subscribe-box {
+  /* O'ng tomondagi samolyot tugmasi */
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-btn {
+  background: transparent;
+  /* Fon yo'q */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 12px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  /* Tugma ustiga sichqoncha kelgandagi effektlar */
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-btn:hover {
+  opacity: 0.8;
+  transform: translate(2px, -2px) scale(1.05);
+  /* Samolyot biroz uchishga tayyorlanadi */
+}
+#footer .container .footer_center .center_left .subscribe-box .subscribe-btn:active {
+  transform: scale(0.95);
+}
+#footer .container .footer_center .center_right {
+  display: flex;
+  align-items: flex-start;
+  gap: 91px;
+}
+#footer .container .footer_center .center_right .footer_nav h4 {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.6%;
+  color: #999999;
+}
+#footer .container .footer_center .center_right .footer_nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+#footer .container .footer_center .center_right .footer_nav ul a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+#footer .container .footer_center .center_right .footer_nav ul {
+  /* Pastki chiziqning boshlang'ich holati */
+}
+#footer .container .footer_center .center_right .footer_nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  /* Chiziqni boshida yashirish */
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: rgb(0, 166, 255);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+  /* Animatsiya tezligi */
+}
+#footer .container .footer_center .center_right .footer_nav ul {
+  /* Sichqoncha kelgandagi holat */
+}
+#footer .container .footer_center .center_right .footer_nav ul a:hover {
+  color: rgb(0, 166, 255);
+}
+#footer .container .footer_center .center_right .footer_nav ul a:hover::after {
+  transform: scaleX(1);
+  /* Chiziqni to'liq chiqarish */
+}
+#footer .container .footer_end {
+  width: 1440px;
+  padding: 12px 80px 12px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A1A1A;
+}
+#footer .container .footer_end .end_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#footer .container .footer_end .end_left a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.6%;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+#footer .container .footer_end .end_left a:hover {
+  color: #999999;
+}
+#footer .container .footer_end .end_right a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 11px 11px 9px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-radius: 50%;
+}
+#footer .container .footer_end .end_right a:active {
+  background-color: rgb(35, 35, 35);
+}/*# sourceMappingURL=footer.css.map */

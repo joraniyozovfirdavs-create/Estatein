@@ -1,0 +1,102 @@
+header {
+    background-color: #1A1A1A;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #262626;
+    z-index: 1000;
+
+    .container {
+
+        .header_top {
+            height: 49px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            border-bottom: 1px solid #262626;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%5;
+                color: #FFFFFF;
+            }
+
+            a {
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #FFFFFF;
+            }
+        }
+
+        .header_end {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 80px;
+
+            .end_left {
+                display: flex;
+                align-items: center;
+                gap: 7.25px;
+            }
+
+            .end_center--menu {
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 24px;
+
+                    a {
+                        color: #ffffff;
+                        font-size: 14px;
+                        line-height: 150%;
+                        font-weight: 500;
+                        padding: 12px 20px;
+                        border-radius: 8px;
+                        border: 1px solid transparent;
+
+                        &:hover {
+                            background-color: #101010;
+                            border-color: #333333;
+                            transition: 0.3s ease;
+                        }
+
+                        &:active {
+                            background-color: rgb(57, 57, 57);
+                            border-color: #333333;
+                        }
+                    }
+                }
+            }
+
+            .end_right {
+
+                a {
+                    width: 120px;
+                    height: 49px;
+                    background-color: #141414;
+                    padding: 14px 20px;
+                    border: 1px solid #333333;
+                    border-radius: 8px;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 14px;
+                    line-height: 150%;
+                    font-weight: 500;
+
+                    &:active {
+                        background-color: rgb(35, 35, 35);
+                    }
+                }
+            }
+        }
+    }
+}

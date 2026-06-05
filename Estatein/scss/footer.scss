@@ -1,0 +1,254 @@
+#footer {
+
+    .container {
+        background-color: #141414;
+
+        .footer_top {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px 60px 80px;
+            border-top: 1px solid #262626;
+            border-bottom: 1px solid #262626;
+
+            .top_left {
+                width: 975px;
+
+
+                h2 {
+                    font-size: 38px;
+                    line-height: 150%;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                }
+
+                .top_text {
+
+                    p {
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 500;
+                        color: #999999;
+                    }
+                }
+            }
+
+            .top_right {
+                margin-bottom: 13px;
+
+                a {
+                    width: 165px;
+                    height: 49px;
+                    padding: 14px 20px;
+                    background-color: #1A1A1A;
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    line-height: 150%;
+                    font-weight: 500;
+                    color: #ffffff;
+                    background-color: #703BF7;
+                    border: none;
+
+                    &:active {
+                        background-color: #703bf7b9;
+                    }
+                }
+            }
+        }
+
+        .footer_center {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 80px;
+
+            .center_left {
+
+                /* Inputni o'rab turgan umumiy konteyner */
+                .subscribe-box {
+                    display: flex;
+                    align-items: center;
+                    background-color: #141414;
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                    padding: 14px 20px;
+                    width: 100%;
+                    max-width: 305px;
+                    box-sizing: border-box;
+                    transition: border-color 0.2s ease;
+                    margin-top: 24px;
+
+                    /* Sichqoncha inputga kelganda border biroz yorishadi */
+                    &:focus-within {
+                        border-color: #4d4d4d;
+                    }
+
+                    /* Chap tomondagi ikonka joylashuvi */
+                    .input-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 12px;
+                        /* Matndan masofasi */
+                    }
+
+                    /* Matn kiritiladigan qism (Input) */
+                    .subscribe-input {
+                        flex: 1;
+                        background: transparent;
+                        /* Orqa foni o'chirildi */
+                        border: none;
+                        outline: none;
+                        color: #ffffff;
+                        /* Yozuv rangi */
+                        font-size: 16px;
+                        font-family: sans-serif;
+
+                        /* Ko'rsatkich matn (Placeholder) rangi */
+                        &::placeholder {
+                            color: #666666;
+                            /* Figmadagi och kulrang */
+                            opacity: 1;
+                        }
+                    }
+
+                    /* O'ng tomondagi samolyot tugmasi */
+                    .subscribe-btn {
+                        background: transparent;
+                        /* Fon yo'q */
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        margin-left: 12px;
+                        transition: transform 0.2s ease, opacity 0.2s ease;
+
+                        /* Tugma ustiga sichqoncha kelgandagi effektlar */
+                        &:hover {
+                            opacity: 0.8;
+                            transform: translate(2px, -2px) scale(1.05);
+                            /* Samolyot biroz uchishga tayyorlanadi */
+                        }
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
+
+            .center_right {
+                display: flex;
+                align-items: flex-start;
+                gap: 91px;
+
+                .footer_nav {
+
+                    h4 {
+                        margin-bottom: 24px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        letter-spacing: -0.6%;
+                        color: #999999;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+
+                        a {
+                            position: relative;
+                            text-decoration: none;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: -0.6%;
+                            color: #ffffff;
+                            font-weight: 500;
+                            transition: 0.2s ease;
+                        }
+
+                        /* Pastki chiziqning boshlang'ich holati */
+                        a::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            /* Chiziqni boshida yashirish */
+                            height: 2px;
+                            bottom: -4px;
+                            left: 0;
+                            background-color: rgb(0, 166, 255);
+                            transform-origin: bottom center;
+                            transition: transform 0.3s ease-out;
+                            /* Animatsiya tezligi */
+                        }
+
+                        /* Sichqoncha kelgandagi holat */
+                        a:hover {
+                            color: rgb(0, 166, 255);
+                        }
+
+                        a:hover::after {
+                            transform: scaleX(1);
+                            /* Chiziqni to'liq chiqarish */
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_end {
+            width: 1440px;
+            padding: 12px 80px 12px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1A1A1A;
+
+            .end_left {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                a {
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    letter-spacing: -0.6%;
+                    color: #ffffff;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: #999999;
+                    }
+                }
+            }
+
+            .end_right {
+
+                a {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    padding: 9px 11px 11px 9px;
+                    background-color: #141414;
+                    border: 1px solid #262626;
+                    border-radius: 50%;
+
+                    &:active {
+                        background-color: rgb(35, 35, 35);
+                    }
+                }
+            }
+        }
+    }
+}
